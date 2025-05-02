@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple calculator</title>
+    <link href="style.css" rel="stylesheet" /></head
+  >̥
+  <body>
+    <h1>
+      <b><u>SIMPLE CALCULATOR</u></b>
+    </h1>
+    <form name="calculator" class="calculator">
+      <table
+        border="3"
+        text-align="center"
+        cellpadding="10"
+        cellspacing="15"
+        bgcolor="pink"
+      >
+        <tr>
+          <td>
+            <input type="text" name="input" id="display" />
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <form>
+              <input
+                type="button"
+                name="opening parenthesis"
+                value="("
+                onclick="calculator.input.value+='('"
+                class="light"
+              />
+              <input
+                type="button"
+                name="closing parenthesis"
+                value=")"
+                onclick="calculator.input.value+=')'"
+                class="light"
+              />
+              <input
+                type="button"
+                name="clear"
+                value="C"
+                onclick="calculator.input.value=''"
+                class="light"
+              />
+              <input
+                type="button"
+                name="percentage sign"
+                value="%"
+                onclick="calculator.input.value+='%'"
+                class="light"
+              />
+              <br />
+
+              <input
+                type="button"
+                name="seven"
+                value="7"
+                onclick="calculator.input.value+='7'"
+                class="light"
+              />
+              <input
+                type="button"
+                name="eight"
+                value="8"
+                onclick="calculator.input.value+='8'"
+                class="light"
+              />
+              <input
+                type="button"
+                name="nine"
+                value="9"
+                onclick="calculator.input.value+='9'"
+                class="light"
+              />
+              <input
+                type="button"
+                name="mul"
+                value="*"
+                onclick="calculator.input.value+='*'"
+                class="light"
+              />
+              <br />
+
+              <input
+                type="button"
+                name="four"
+                value="4"
+                onclick="calculator.input.value+='4'"
+                class="light"
+              />
+              <input
+                type="button"
+                name="five"
+                value="5"
+                onclick="calculator.input.value+='5'"
+                class="light"
+              />
+              <input
+                type="button"
+                name="six"
+                value="6"
+                onclick="calculator.input.value+='6'"
+                class="light"
+              />
+              <input
+                type="button"
+                name="minus"
+                value="-"
+                onclick="calculator.input.value+='-'"
+                class="light"
+              />
+              <br />
+
+              <input
+                type="button"
+                name="one"
+                value="1"
+                onclick="calculator.input.value+='1'"
+                class="light"
+              />
+              <input
+                type="button"
+                name="two"
+                value="2"
+                onclick="calculator.input.value+='2'"
+                class="light"
+              />
+              <input
+                type="button"
+                name="three"
+                value="3"
+                onclick="calculator.input.value+='3'"
+                class="light"
+              />
+              <input
+                type="button"
+                name="add"
+                class="button light"
+                value="+"
+                onclick="calculator.input.value+='+'"
+              />
+              <br />
+
+              <input
+                type="button"
+                name="zero"
+                value="0"
+                onclick="calculator.input.value+='0'"
+                class="light"
+              />
+              <input
+                type="button"
+                name="period"
+                value="."
+                onclick="calculator.input.value+='.'"
+                class="light"
+              />
+              <input
+                type="button"
+                name="div"
+                value="/"
+                onclick="calculator.input.value+='/'"
+                class="light"
+              />
+              <input
+                type="button"
+                name="DOIT"
+                value="="
+                onclick="calculator.input.value = eval(calculator.input.value)"
+                class="operator"
+              />
+              <br />
+            </form>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
